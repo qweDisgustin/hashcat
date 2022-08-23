@@ -154,7 +154,7 @@ int module_hash_decode (MAYBE_UNUSED const hashconfig_t *hashconfig, MAYBE_UNUSE
 
   token.sep[3]     = '$';
   token.len_min[3] = 64;
-  token.len_max[3] = CT_MAX_LEN_BASE64;
+  token.len_max[3] = 80000;
   token.attr[3]    = TOKEN_ATTR_VERIFY_LENGTH
                    | TOKEN_ATTR_VERIFY_BASE64A;
 
